@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+@font-face {
+  font-family: 'Roadstore';
+  src: url('./Fonts/ROADSTORE Dafont.ttf') format('truetype'),
+    url('./Fonts/ROADSTORE Dafont.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: rgb(23, 4, 75);
+}
+
+.nav-btn {
+  width: 185px;
+  height: 40px;
+  color: #d1a308;
+  text-shadow: 1.41px 1.41px 2px #000000;
+  font-size: 17px;
+  transition: all 0.4s ease, visibility 0s;
+  border-radius: 10px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset -2.95px -0.52px 3px -1px #000000,
+    3px 3px 2px rgba(0, 0, 0, 0), inset 3px 2.22px 5px 1px #deb226;
+}
+
+.nav-btn:hover {
+  background-color: #d1a308;
+  color: white;
+}
+
+.roadstore {
+  font-family: 'Roadstore', sans-serif;
+  text-transform: capitalize;
+}
+
+.alconica {
+  font-family: 'Aclonica', sans-serif;
+  letter-spacing: 0em;
+}
+
+.times {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.input {
+  width: 373px;
+  height: 40px;
+  font-size: 20px;
+  padding: 3px 14px;
+  border: 2px solid rgb(52, 42, 41);
+  outline: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .input {
+    width: 50%;
+  }
+}
+
+.input:active,
+.input:focus {
+  border: 3px solid #000000;
+}
+
+.s-input {
+  font-size: 20px;
+  padding: 3px 14px;
+  border: 2px solid rgb(52, 42, 41);
+  outline: none;
+  font-family: 'Times New Roman', Times, serif;
+  color: #eee035;
+  text-align: center;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 400ms ease-out;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 400ms ease-in;
+}
+
+.isTransitioning {
+  opacity: 0.5;
+  pointer-events: none;
+}
